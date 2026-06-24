@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import playwright\")",
+      "Bash(node -e \"require\\('playwright'\\)\")",
+      "Bash(pkill -f dev_server.py)",
+      "Bash(nohup python3 dev_server.py)",
+      "Bash(curl -s \"http://localhost:8000/api/weather?city=Warsaw\")",
+      "Bash(curl -s \"http://localhost:8000/api/weather?city=Paris&place=Eiffel+Tower\")",
+      "Bash(curl -s \"http://localhost:8000/api/weather?city=Warsaw&place=Palace+of+Culture+and+Science\")",
+      "Bash(curl -s http://localhost:9222/json/version)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('Browser:', d['Browser']\\)\")"
+    ]
+  }
+}
